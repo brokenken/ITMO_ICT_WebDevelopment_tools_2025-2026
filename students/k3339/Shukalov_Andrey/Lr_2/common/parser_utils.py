@@ -37,10 +37,10 @@ def extract_title(html: str | bytes) -> str:
 def db_config() -> dict[str, str | int]:
     return {
         "host": os.getenv("DB_HOST", "localhost"),
-        "port": int(os.getenv("DB_PORT", "5434")),
-        "dbname": os.getenv("DB_NAME", "lr2_db"),
-        "user": os.getenv("DB_USER", "lr2"),
-        "password": os.getenv("DB_PASSWORD", "lr2"),
+        "port": int(os.getenv("DB_PORT", "5432")),
+        "dbname": os.getenv("DB_NAME", "time_manager"),
+        "user": os.getenv("DB_USER", "postgres"),
+        "password": os.getenv("DB_PASSWORD", ""),
     }
 
 
